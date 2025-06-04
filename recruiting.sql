@@ -3,7 +3,7 @@
 -- Table creation
 CREATE TABLE educators (
     first_name VARCHAR(50),
-    last_name VARCHAR(50),
+    last_name VARCHAR(50) CHECK (char_length(last_name) > 1),
     dob DATE,
     gender VARCHAR(10),
     college_attended VARCHAR(100),
